@@ -22,10 +22,11 @@
           </a>
         </div>
 
-        <!-- Imagem -->
-        <div class="image-wrapper">
-          <img class="hero-image" data-aos="fade-down" src="../../assets/img/starbranco.png" alt="Imagem do Hero Section" />
-        </div>
+<!-- Imagem -->
+<div class="image-wrapper">
+  <img class="hero-image" data-aos="fade-down" src="@/assets/img/starbranco.png" alt="Imagem do Hero Section" />
+</div>
+
       </div>
     </div>
   </section>
