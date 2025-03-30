@@ -13,13 +13,13 @@
             <li v-for="social in socialLinks" :key="social.name">
               <a :href="social.url" :title="social.name"
                 class="flex items-center justify-center text-white transition-all duration-200 bg-gray-800 rounded-full w-8 h-8 hover:bg-blue-600 focus:bg-blue-600">
-                <font-awesome-icon :icon="['fab', social.icon.replace('fa-', '')]" />
+                <font-awesome-icon :icon="['fab', social.icon]" />
               </a>
             </li>
           </ul>
         </div>
 
-        <!-- Seção de Links: Suporte -->
+        <!-- Seção de Links: Serviços -->
         <div>
           <h3 class="text-lg font-semibold text-white">Serviços</h3>
           <ul class="mt-4 space-y-3">
@@ -43,16 +43,18 @@
           <h3 class="text-lg font-semibold text-white">Fale Conosco</h3>
           <ul class="mt-4 space-y-3">
             <li class="flex items-center">
-              <font-awesome-icon icon="phone" class="w-4 h-4 text-white mr-2" />
-              <span class="text-base text-white">21 983192355</span>
+              <font-awesome-icon :icon="['fas', 'phone']" class="w-4 h-4 text-white mr-2" />
+              <a href="tel:+5521983192355" class="text-base text-white hover:underline">21 98319-2355</a>
             </li>
             <li class="flex items-center">
-              <font-awesome-icon icon="envelope" class="w-4 h-4 text-white mr-2" />
-              <span class="text-base text-white">Contato@starconsignados.com.br</span>
+              <font-awesome-icon :icon="['fas', 'envelope']" class="w-4 h-4 text-white mr-2" />
+              <a href="mailto:Contato@starconsignados.com.br" class="text-base text-white hover:underline">Contato@starconsignados.com.br</a>
             </li>
             <li class="flex items-center">
-              <font-awesome-icon icon="map-marker-alt" class="w-4 h-4 text-white mr-2" />
-              <span class="text-base text-white">Travessa Moura Sá n°7 sala 701</span>
+              <font-awesome-icon :icon="['fas', 'map-marker-alt']" class="w-4 h-4 text-white mr-2" />
+              <a href="https://www.google.com/maps/search/Travessa+Moura+S%C3%A1+n%C2%BA7+sala+701" target="_blank" class="text-base text-white hover:underline">
+                Travessa Moura Sá n°7 sala 701
+              </a>
             </li>
           </ul>
         </div>
@@ -84,8 +86,8 @@ export default {
   data() {
     return {
       socialLinks: [
-        { name: 'Facebook', url: 'https://www.facebook.com/starconsignados/', icon: 'fa-facebook' },
-        { name: 'Instagram', url: 'https://www.instagram.com/starconsignados', icon: 'fa-instagram' },
+        { name: 'Facebook', url: 'https://www.facebook.com/starconsignados/', icon: 'facebook' },
+        { name: 'Instagram', url: 'https://www.instagram.com/starconsignados', icon: 'instagram' },
       ],
     };
   },
@@ -94,12 +96,8 @@ export default {
 
 <style scoped>
 /* Ajustes finos */
-
 footer {
   background-color: #0f0d0e;
-}
-
-footer {
   @apply border-t border-gray-200;
 }
 
@@ -122,4 +120,3 @@ ul li a {
   }
 }
 </style>
-  
