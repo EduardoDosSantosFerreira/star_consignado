@@ -1,4 +1,4 @@
-# StarConsignado
+# Star Consignados
 
 StarConsignado é uma plataforma de soluções financeiras especializadas em consignados, oferecendo uma interface interativa e intuitiva para os usuários encontrarem as melhores opções de crédito consignado.
 
