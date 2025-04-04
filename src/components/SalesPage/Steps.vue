@@ -54,7 +54,7 @@ background-color: #eff6ff; /* bg-blue-50 */
 
 .title {
 margin-top: 0.75rem; /* mt-3 */
-margin-bottom: 4.5rem; /* Espaço pequeno entre título e descrição (corrigido de 9.5rem) */
+margin-bottom: 2rem; /* Espaço pequeno entre título e descrição (corrigido de 9.5rem) */
 font-size: 3rem; /* text-4xl */
 font-weight: 600; /* font-semibold */
 color: #111827; /* text-gray-900 */
