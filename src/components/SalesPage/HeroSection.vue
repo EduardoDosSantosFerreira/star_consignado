@@ -23,7 +23,7 @@
 
         <!-- Imagem -->
         <div class="image-wrapper">
-          <img class="hero-image fade" ref="heroImage" src="@/assets/img/starbranco.png" alt="Imagem do Hero Section" />
+          <img class="hero-image fade" ref="heroImage" src="@/assets/img/STARanimado.gif" alt="Imagem do Hero Section" />
         </div>
       </div>
     </div>

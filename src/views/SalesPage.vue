@@ -4,6 +4,8 @@
   <Faixa />
   <Services />
   <Steps />
+  <requerimentos />
+  <servidor />
   <Flutuantes />
   <Faq />
   <Footer />
@@ -15,9 +17,12 @@ import HeroSection from "../components/SalesPage/HeroSection.vue";
 import Faixa from "../components/SalesPage/faixa.vue";
 import Services from "../components/SalesPage/services.vue";
 import Steps from "../components/SalesPage/Steps.vue";
+import requerimentos from "../components/SalesPage/requerimentos.vue";
+import servidor from "../components/SalesPage/servidor.vue";
 import Flutuantes from "../components/SalesPage/Flutuantes.vue";
 import Faq from "../components/SalesPage/faq.vue";
 import Footer from "../components/Global/footers.vue";
+
 
 export default {
   components: {
@@ -26,6 +31,8 @@ export default {
     Faixa,
     Services,
     Steps,
+    requerimentos,
+    servidor,
     Flutuantes,
     Faq,
     Footer,

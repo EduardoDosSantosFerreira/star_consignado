@@ -98,8 +98,7 @@ export default {
 
 /* Estilo do logo */
 .logo img {
-  height: 170px;
-  /* Ajuste conforme necessário */
+  height: 150px; /* Reduzi um pouco aqui também para harmonia */
 }
 
 /* Estilo dos botões (desktop e mobile) */
@@ -109,7 +108,7 @@ export default {
   color: rgb(255, 255, 255);
   margin: 0 1rem;
   cursor: pointer;
-  font-size: 1.50rem;
+  font-size: 1.25rem; /* Reduzido de 1.50rem */
 }
 
 .nav-button:hover {
@@ -121,8 +120,8 @@ export default {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  width: 30px;
-  height: 24px;
+  width: 28px;
+  height: 22px;
   cursor: pointer;
 }
 
@@ -138,38 +137,32 @@ export default {
   flex-direction: column;
   position: absolute;
   top: 60px;
-  /* Ajuste conforme a altura do header */
   right: 1rem;
   background-color: #000000;
   padding: 0 1rem;
   border-radius: 5px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: max-height 0.3s ease, padding 0.3s ease;
-  /* Adiciona transição */
   max-height: 0;
-  /* Inicialmente escondido */
   overflow: hidden;
-  /* Esconde o conteúdo que excede a altura */
 }
 
 .nav-mobile button {
   margin: 0.5rem 0;
+  font-size: 1.1rem; /* Reduzido também para o mobile */
 }
 
 /* Responsividade */
 @media (max-width: 768px) {
   .nav-desktop {
     display: none;
-    /* Esconde os botões em telas menores */
   }
 }
 
 @media (min-width: 769px) {
-
   .hamburger,
   .nav-mobile {
     display: none;
-    /* Esconde o menu hambúrguer e o menu mobile em telas maiores */
   }
 }
 </style>
