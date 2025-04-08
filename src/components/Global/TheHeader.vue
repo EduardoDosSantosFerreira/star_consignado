@@ -98,7 +98,8 @@ export default {
 
 /* Estilo do logo */
 .logo img {
-  height: 150px; /* Reduzi um pouco aqui também para harmonia */
+  height: 150px;
+  /* Reduzi um pouco aqui também para harmonia */
 }
 
 /* Estilo dos botões (desktop e mobile) */
@@ -108,7 +109,8 @@ export default {
   color: rgb(255, 255, 255);
   margin: 0 1rem;
   cursor: pointer;
-  font-size: 1.25rem; /* Reduzido de 1.50rem */
+  font-size: 1.25rem;
+  /* Reduzido de 1.50rem */
 }
 
 .nav-button:hover {
@@ -149,7 +151,8 @@ export default {
 
 .nav-mobile button {
   margin: 0.5rem 0;
-  font-size: 1.1rem; /* Reduzido também para o mobile */
+  font-size: 1.1rem;
+  /* Reduzido também para o mobile */
 }
 
 /* Responsividade */
@@ -160,6 +163,7 @@ export default {
 }
 
 @media (min-width: 769px) {
+
   .hamburger,
   .nav-mobile {
     display: none;
