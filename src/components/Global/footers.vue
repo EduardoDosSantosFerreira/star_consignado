@@ -50,7 +50,7 @@
           <ul class="mt-4 space-y-3">
             <li class="flex items-center">
               <font-awesome-icon :icon="['fas', 'phone']" class="w-4 h-4 text-white mr-2" />
-              <a href="tel:+5521983192355" class="text-base text-white hover:underline">21 98319-2355</a>
+              <a href="tel:+2198319235555" class="text-base text-white hover:underline">21 98319-2355</a>
             </li>
             <li class="flex items-center">
               <font-awesome-icon :icon="['fas', 'envelope']" class="w-4 h-4 text-white mr-2" />

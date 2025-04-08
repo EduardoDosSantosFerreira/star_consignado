@@ -12,6 +12,7 @@
       <button class="nav-button" @click="goHome">Home</button>
       <button class="nav-button" @click="scrollToServices">Serviços</button>
       <button class="nav-button" @click="scrollToFaq">Perguntas Frequentes</button>
+      <a href="https://wa.me/5521983192355?text=Olá,%20gostaria%20de%20mais%20informações!" target="_blank" class="contact-button">Fale Conosco</a>
     </nav>
 
     <!-- Menu Hambúrguer (visível em telas menores) -->
@@ -22,10 +23,11 @@
     </div>
 
     <!-- Menu Mobile (aparece ao clicar no hambúrguer) -->
-    <nav class="nav-mobile" v-if="isMobile" :style="{ maxHeight: isMenuOpen ? '200px' : '0' }">
+    <nav class="nav-mobile" v-if="isMobile" :style="{ maxHeight: isMenuOpen ? '250px' : '0' }">
       <button class="nav-button" @click="goHome">Home</button>
       <button class="nav-button" @click="scrollToServices">Serviços</button>
       <button class="nav-button" @click="scrollToFaq">Perguntas Frequentes</button>
+      <a href="https://wa.me/5521983192355?text=Olá,%20gostaria%20de%20mais%20informações!" target="_blank" class="contact-button">Fale Conosco</a>
     </nav>
   </header>
 </template>
@@ -84,13 +86,13 @@ export default {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.5rem 10vw; /* Reduzido de 1rem para 0.5rem */
+  padding: 0.5rem 10vw;
   background-color: #0f0d0e;
 }
 
 /* Estilo do logo */
 .logo img {
-  height: 100px; /* Reduzido de 150px para 100px */
+  height: 100px;
 }
 
 /* Estilo dos botões (desktop e mobile) */
@@ -98,13 +100,33 @@ export default {
   font-weight: 500;
   border: none;
   color: rgb(255, 255, 255);
-  margin: 0 0.75rem; /* Reduzido de 1rem para 0.75rem */
+  margin: 0 0.75rem;
   cursor: pointer;
-  font-size: 1rem; /* Reduzido de 1.25rem para 1rem */
+  font-size: 1rem;
+  background: none; /* Garantir que não tenha fundo padrão */
 }
 
 .nav-button:hover {
   color: #5c5c5c;
+}
+
+/* Estilo do botão Fale Conosco */
+.contact-button {
+  font-weight: 600;
+  color: #ffffff;
+  background-color: #868686; /* Cor oficial do WhatsApp */
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1rem;
+  margin: 0 0.75rem;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+  background-color: #1ebe52; /* Tom mais escuro ao passar o mouse */
+  color: #ffffff;
 }
 
 /* Estilo do menu hambúrguer */
@@ -112,14 +134,14 @@ export default {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  width: 24px; /* Reduzido de 28px para 24px */
-  height: 18px; /* Reduzido de 22px para 18px */
+  width: 24px;
+  height: 18px;
   cursor: pointer;
 }
 
 .hamburger-line {
   width: 100%;
-  height: 2px; /* Reduzido de 3px para 2px */
+  height: 2px;
   background-color: rgb(35, 35, 35);
 }
 
@@ -128,7 +150,7 @@ export default {
   display: flex;
   flex-direction: column;
   position: absolute;
-  top: 50px; /* Reduzido de 60px para 50px */
+  top: 50px;
   right: 1rem;
   background-color: #000000;
   padding: 0 1rem;
@@ -139,9 +161,10 @@ export default {
   overflow: hidden;
 }
 
-.nav-mobile button {
-  margin: 0.4rem 0; /* Reduzido de 0.5rem para 0.4rem */
-  font-size: 1rem; /* Reduzido de 1.1rem para 1rem */
+.nav-mobile button,
+.nav-mobile .contact-button {
+  margin: 0.4rem 0;
+  font-size: 1rem;
 }
 
 /* Responsividade */
