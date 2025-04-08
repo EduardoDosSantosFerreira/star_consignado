@@ -89,7 +89,7 @@
         seguem as normas específicas de cada convênio, bem como a política de crédito da instituição financeira
         contratada.
 
-        STAR CONSIGNADOS SOLUÇÕES EM CRÉDITO LTDA – CNPJ 56.950.767/0001-36
+        STAR CONSIGNADOS SOLUÇÕES EM CRÉDITO LTDA – CNPJ  374219420001-53
         Endereço: Travessa Moura Sá, nº 7 - Sala 701 - Madureira - Rio de Janeiro/RJ - CEP 21351-080
       </p>
     </div>
