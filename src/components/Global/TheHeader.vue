@@ -35,52 +35,44 @@ export default {
   name: 'Header',
   data() {
     return {
-      isMobile: false, // Controla se está em modo mobile
-      isMenuOpen: false, // Controla se o menu mobile está aberto
+      isMobile: false,
+      isMenuOpen: false,
     };
   },
   methods: {
-    // Verifica o tamanho da tela e atualiza o estado de isMobile
     checkScreenSize() {
-      this.isMobile = window.innerWidth <= 768; // Define 768px como breakpoint para mobile
+      this.isMobile = window.innerWidth <= 768;
     },
-    // Alterna a visibilidade do menu mobile
     toggleMenu() {
       this.isMenuOpen = !this.isMenuOpen;
     },
-    // Redireciona para a página inicial
     goHome() {
       window.location.href = '/';
     },
-    // Faz o scroll suave para o componente Services
     scrollToServices() {
       const servicesSection = document.querySelector('.py-10.bg-gray-50');
       if (servicesSection) {
         servicesSection.scrollIntoView({ behavior: 'smooth' });
       }
       if (this.isMobile) {
-        this.toggleMenu(); // Fecha o menu mobile após clicar
+        this.toggleMenu();
       }
     },
-    // Faz o scroll suave para o componente Faq
     scrollToFaq() {
-      const faqSection = document.querySelector('#faq-section'); // Alterado para usar o ID
+      const faqSection = document.querySelector('#faq-section');
       if (faqSection) {
         faqSection.scrollIntoView({ behavior: 'smooth' });
       }
       if (this.isMobile) {
-        this.toggleMenu(); // Fecha o menu mobile após clicar
+        this.toggleMenu();
       }
     },
   },
   mounted() {
-    // Verifica o tamanho da tela ao carregar o componente
     this.checkScreenSize();
-    // Adiciona um listener para verificar o tamanho da tela ao redimensionar a janela
     window.addEventListener('resize', this.checkScreenSize);
   },
   beforeDestroy() {
-    // Remove o listener ao destruir o componente para evitar memory leaks
     window.removeEventListener('resize', this.checkScreenSize);
   },
 };
@@ -92,14 +84,13 @@ export default {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 10vw;
+  padding: 0.5rem 10vw; /* Reduzido de 1rem para 0.5rem */
   background-color: #0f0d0e;
 }
 
 /* Estilo do logo */
 .logo img {
-  height: 150px;
-  /* Reduzi um pouco aqui também para harmonia */
+  height: 100px; /* Reduzido de 150px para 100px */
 }
 
 /* Estilo dos botões (desktop e mobile) */
@@ -107,10 +98,9 @@ export default {
   font-weight: 500;
   border: none;
   color: rgb(255, 255, 255);
-  margin: 0 1rem;
+  margin: 0 0.75rem; /* Reduzido de 1rem para 0.75rem */
   cursor: pointer;
-  font-size: 1.25rem;
-  /* Reduzido de 1.50rem */
+  font-size: 1rem; /* Reduzido de 1.25rem para 1rem */
 }
 
 .nav-button:hover {
@@ -122,14 +112,14 @@ export default {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  width: 28px;
-  height: 22px;
+  width: 24px; /* Reduzido de 28px para 24px */
+  height: 18px; /* Reduzido de 22px para 18px */
   cursor: pointer;
 }
 
 .hamburger-line {
   width: 100%;
-  height: 3px;
+  height: 2px; /* Reduzido de 3px para 2px */
   background-color: rgb(35, 35, 35);
 }
 
@@ -138,7 +128,7 @@ export default {
   display: flex;
   flex-direction: column;
   position: absolute;
-  top: 60px;
+  top: 50px; /* Reduzido de 60px para 50px */
   right: 1rem;
   background-color: #000000;
   padding: 0 1rem;
@@ -150,9 +140,8 @@ export default {
 }
 
 .nav-mobile button {
-  margin: 0.5rem 0;
-  font-size: 1.1rem;
-  /* Reduzido também para o mobile */
+  margin: 0.4rem 0; /* Reduzido de 0.5rem para 0.4rem */
+  font-size: 1rem; /* Reduzido de 1.1rem para 1rem */
 }
 
 /* Responsividade */
@@ -163,7 +152,6 @@ export default {
 }
 
 @media (min-width: 769px) {
-
   .hamburger,
   .nav-mobile {
     display: none;
