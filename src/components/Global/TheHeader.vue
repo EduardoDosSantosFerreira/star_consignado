@@ -88,6 +88,8 @@ export default {
   align-items: center;
   padding: 0.5rem 10vw;
   background-color: #0f0d0e;
+  position: relative; /* Garante que o z-index funcione */
+  z-index: 10; /* Fica acima de outras seções como hero-image */
 }
 
 /* Estilo do logo */
@@ -99,11 +101,11 @@ export default {
 .nav-button {
   font-weight: 500;
   border: none;
-  color: rgb(255, 255, 255);
+  color: #ffffff;
   margin: 0 0.75rem;
   cursor: pointer;
   font-size: 1rem;
-  background: none; /* Garantir que não tenha fundo padrão */
+  background: none;
 }
 
 .nav-button:hover {
@@ -114,7 +116,7 @@ export default {
 .contact-button {
   font-weight: 600;
   color: #ffffff;
-  background-color: #868686; /* Cor oficial do WhatsApp */
+  background-color: #868686;
   padding: 0.5rem 1rem;
   border-radius: 5px;
   text-decoration: none;
@@ -125,7 +127,7 @@ export default {
 }
 
 .contact-button:hover {
-  background-color: #1ebe52; /* Tom mais escuro ao passar o mouse */
+  background-color: #1ebe52;
   color: #ffffff;
 }
 
@@ -142,7 +144,7 @@ export default {
 .hamburger-line {
   width: 100%;
   height: 2px;
-  background-color: rgb(35, 35, 35);
+  background-color: white; /* Melhor visibilidade em fundo escuro */
 }
 
 /* Estilo do menu mobile */
@@ -150,7 +152,7 @@ export default {
   display: flex;
   flex-direction: column;
   position: absolute;
-  top: 50px;
+  top: 100px; /* Alinha abaixo do logo */
   right: 1rem;
   background-color: #000000;
   padding: 0 1rem;
@@ -159,6 +161,7 @@ export default {
   transition: max-height 0.3s ease, padding 0.3s ease;
   max-height: 0;
   overflow: hidden;
+  z-index: 15; /* Garante que o menu fique acima da imagem de fundo */
 }
 
 .nav-mobile button,

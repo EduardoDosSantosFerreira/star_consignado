@@ -17,7 +17,7 @@
       </p>
 
       <div class="cta-links">
-        <a href="#" class="cta-link">Saiba Mais <span>↗</span></a>
+        <a href="parceiro" class="cta-link">Saiba Mais <span>↗</span></a>
         <a href="https://api.whatsapp.com/send/?phone=5521983192355&text=Olá,%20gostaria%20de%20simular%20meu%20crédito%20consignado!" target="_blank" class="whatsapp-link">
           <i class="fab fa-whatsapp"></i> Fale Conosco
         </a>
